@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+
+import sys
+
+if len(sys.argv) == 1:
+    print('idealweight <height in inches>')
+    sys.exit()
+elif int(sys.argv[1]) < 60:
+    m_weight = (int(sys.argv[1])/2.11)
+    f_weight = 0
+else:
+    m_weight = (int(sys.argv[1])-60)*4.18878+114.64
+    f_weight = (int(sys.argv[1])-60)*3.74786+108.027
+
+print ("Male: %f\nFemale: %f" % (m_weight, f_weight))
+
