@@ -10,6 +10,6 @@ setup(
         author_email='peterjschroeder@gmail.com', 
         url='https://github.com/peterjschroeder/dndtools',
         scripts=['idealweight'],
-        install_requires=['asciimatics']
+        install_requires=['asciimatics', 'xmltodict']
 )
 
